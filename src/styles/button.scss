@@ -1,4 +1,5 @@
 button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,8 +15,31 @@ button {
   font-size: 1.125rem;
   color: var(--white);
 
+  outline: 0;
+
   &:hover {
     background: var(--background-button2);
+  }
+
+  &:before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 0;
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    background: var(--yellow);
+    transition: height 300ms linear;
+  }
+
+  &:hover:before {
+    height: 100%;
   }
 
   transition: background 200ms;
@@ -31,5 +55,10 @@ button {
   &.selected {
     background: var(--background-button2);
     color: var(--yellow);
+
+    &:before{
+      height: 100%;
+    }
   }
+
 }
