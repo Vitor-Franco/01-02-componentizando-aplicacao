@@ -3,16 +3,10 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Template</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-template">Template</a>
 </p>
-
-<br>
-
-<!-- <p align="center">
-  <img alt="watchme" src=".github/logo.png" width="120px">
-</p> -->
 
 ## 🧪 Tecnologias
 
@@ -25,8 +19,8 @@ Este projeto utiliza as seguintes tecnologias:
 ## 🔥 Preview
 
 <!-- <p align="center">
-  <a href="https://whatchme.netlify.app/" target="_blank">
-    <img alt="Demo on Netlify" src="https://i.ibb.co/b13vhFK/demo-on-netlify-bbuvjz.png">
+  <a href="https://watchmen-v.netlify.app/" target="_blank">
+    <img alt="Demo on Netlify" src="">
   </a>
 </p> -->
 
@@ -55,9 +49,7 @@ $ yarn dev
 
 #### Desafio complementar da trilha de ReactJS.
 
-Neste desaio era necessário **identificar** possíveis components numa aplicação já pronta, separá-los e por fim utilizá-los.
-
-Adicionei algumas mudanças nos arquivos **.scss** de estilização, para melhorar a visualização do conteúdo.
+Este desafio é necessário **identificar** possíveis components numa aplicação já pronta, separá-los e por fim utilizá-los.
 
 Projeto desenvolvido durante Bootcamp Ignite da [@Rocketseat](https://github.com/Rocketseat).
 
