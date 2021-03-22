@@ -18,7 +18,9 @@ Este projeto utiliza as seguintes tecnologias:
 
 ## 🔥 Preview
 
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9db2937c-6671-4d7d-a266-ff4a5f88b6bd/deploy-status)](https://watchmen-v.netlify.app/)*
+<br>
 
 *Pode ser que demore um pouco para carregar as informações. Portanto, aguarde um pouco e se persistir tente carregar novamente a página.
 
