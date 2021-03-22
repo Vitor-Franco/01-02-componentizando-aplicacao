@@ -1,4 +1,4 @@
-<img alt="Funcionamento App" title="Funcionamento App" src=".github/01-02-componentizando-aplicacao.gif" />
+<img alt="Funcionamento App" title="Funcionamento App" src=".github/01-02-componentizando-aplicacao.gif" width="150px" />
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -10,9 +10,9 @@
 
 <br>
 
-<p align="center">
+<!-- <p align="center">
   <img alt="watchme" src=".github/logo.png" width="120px">
-</p>
+</p> -->
 
 ## 🧪 Tecnologias
 
@@ -25,11 +25,11 @@ Este projeto utiliza as seguintes tecnologias:
 ## 🔥 Preview
 
 
-<p align="center">
+<!-- <p align="center">
   <a href="https://whatchme.netlify.app/" target="_blank">
     <img alt="Demo on Netlify" src="https://i.ibb.co/b13vhFK/demo-on-netlify-bbuvjz.png">
   </a>
-</p>
+</p> -->
 
 ## 🚀 Getting started
 
