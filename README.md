@@ -1,4 +1,4 @@
-![Alt Text]<img alt="Funcionamento App" title="Funcionamento App" src="https://github.com/Vitor-Franco/01-02-componentizando-aplicacao/blob/main/.github/01-02-componentizando-aplicacao.gif" />
+<img alt="Preview App" title="Preview App" src=".github/project-preview.gif" />
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
