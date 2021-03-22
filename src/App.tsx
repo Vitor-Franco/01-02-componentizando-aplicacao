@@ -28,7 +28,7 @@ export interface MovieProps {
 export function App() {
   const [selectedGenreId, setSelectedGenreId] = useState(1);
   const [genres, setGenres] = useState<GenreResponseProps[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState<MovieProps[]>([]);
   const [selectedGenre, setSelectedGenre] = useState<GenreResponseProps>(
     {} as GenreResponseProps
@@ -40,20 +40,17 @@ export function App() {
 
   useEffect(() => {
     try {
-      setLoading(!loading);
       api.get<GenreResponseProps[]>('genres').then((response) => {
         setGenres(response.data);
       });
     } catch (err) {
       throw new Error(err);
-    } finally {
-      setLoading(!loading);
     }
   }, []);
 
   useEffect(() => {
     try {
-      setLoading(!loading);
+      setLoading(true);
       api
         .get<MovieProps[]>(`movies/?Genre_id=${selectedGenreId}`)
         .then((response) => {
@@ -68,7 +65,7 @@ export function App() {
     } catch (err) {
       throw new Error(err);
     } finally {
-      setLoading(!loading);
+      setLoading(false);
     }
   }, [selectedGenreId]);
 
