@@ -27,9 +27,8 @@ export interface MovieProps {
 
 export function App() {
   const [selectedGenreId, setSelectedGenreId] = useState(1);
-
   const [genres, setGenres] = useState<GenreResponseProps[]>([]);
-
+  const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState<MovieProps[]>([]);
   const [selectedGenre, setSelectedGenre] = useState<GenreResponseProps>(
     {} as GenreResponseProps
@@ -40,28 +39,43 @@ export function App() {
   }
 
   useEffect(() => {
-    api.get<GenreResponseProps[]>('genres').then((response) => {
-      setGenres(response.data);
-    });
+    try {
+      setLoading(!loading);
+      api.get<GenreResponseProps[]>('genres').then((response) => {
+        setGenres(response.data);
+      });
+    } catch (err) {
+      throw new Error(err);
+    } finally {
+      setLoading(!loading);
+    }
   }, []);
 
   useEffect(() => {
-    api
-      .get<MovieProps[]>(`movies/?Genre_id=${selectedGenreId}`)
-      .then((response) => {
-        setMovies(response.data);
-      });
+    try {
+      setLoading(!loading);
+      api
+        .get<MovieProps[]>(`movies/?Genre_id=${selectedGenreId}`)
+        .then((response) => {
+          setMovies(response.data);
+        });
 
-    api
-      .get<GenreResponseProps>(`genres/${selectedGenreId}`)
-      .then((response) => {
-        setSelectedGenre(response.data);
-      });
+      api
+        .get<GenreResponseProps>(`genres/${selectedGenreId}`)
+        .then((response) => {
+          setSelectedGenre(response.data);
+        });
+    } catch (err) {
+      throw new Error(err);
+    } finally {
+      setLoading(!loading);
+    }
   }, [selectedGenreId]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
       <SideBar
+        loading={loading}
         genres={genres}
         handleClickButton={handleClickButton}
         selectedGenreId={selectedGenreId}
@@ -69,7 +83,8 @@ export function App() {
 
       <div className="container">
         <Header>{selectedGenre.title}</Header>
-        <Content movies={movies} />
+
+        <Content movies={movies} loading={loading} />
       </div>
     </div>
   );
