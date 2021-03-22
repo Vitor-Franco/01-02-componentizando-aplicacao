@@ -1,4 +1,4 @@
-<img alt="Funcionamento App" title="Funcionamento App" src=".github/01-02-componentizando-aplicacao.gif" width="150px" />
+![Alt Text]<img alt="Funcionamento App" title="Funcionamento App" src="https://github.com/Vitor-Franco/01-02-componentizando-aplicacao/blob/main/.github/01-02-componentizando-aplicacao.gif" />
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -23,7 +23,6 @@ Este projeto utiliza as seguintes tecnologias:
 - [SASS](https://sass-lang.com/)
 
 ## 🔥 Preview
-
 
 <!-- <p align="center">
   <a href="https://whatchme.netlify.app/" target="_blank">
