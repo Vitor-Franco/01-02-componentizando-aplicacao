@@ -9,15 +9,18 @@
   }
 }
 
+.animated {
+  animation: fadeLeft 300ms;
+}
+
 .movie-card {
   position: relative;
-  animation: fadeLeft 300ms;
-  
+
   img {
     width: 14.31rem;
     height: 21.25rem;
   }
-  
+
   > div {
     position: absolute;
     top: 0;

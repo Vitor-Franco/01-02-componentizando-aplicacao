@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Star, Clock } from 'react-feather';
 
 import '../styles/movie-card.scss';

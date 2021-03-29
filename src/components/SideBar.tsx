@@ -26,6 +26,7 @@ export function SideBar({
           ) : (
             genres.map((genre) => (
               <Button
+                key={genre.id}
                 id={String(genre.id)}
                 title={genre.title}
                 iconName={genre.name}

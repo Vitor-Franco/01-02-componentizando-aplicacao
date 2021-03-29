@@ -6,6 +6,7 @@ interface IconProps {
 }
 
 export function Icon(props: IconProps) {
+  // Retorna o ícone conforme o name que vem via props
   switch (props.name) {
     case 'action':
       return (

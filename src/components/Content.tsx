@@ -6,16 +6,16 @@ interface ContentProps {
 }
 
 export function Content({ movies, loading }: ContentProps) {
-  console.log(loading);
-
   return (
     <main>
       <div className="movies-list">
+        {/* se estiver carregando, retornamos loading, se não, retornamos o conteúdo com as respectivas informações */}
         {loading ? (
           <span className="loader">Loading...</span>
         ) : (
           movies.map((movie) => (
             <MovieCard
+              key={movie.Title}
               title={movie.Title}
               poster={movie.Poster}
               runtime={movie.Runtime}
